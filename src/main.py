@@ -14,6 +14,14 @@ df = pd.read_csv(file)
 # Process
 df = preprocess(df)
 
+# ==============================
+# TRAIN-TEST SPLIT
+# ==============================
+split_index = int(len(df) * 0.8)
+
+train_df = df.iloc[:split_index]
+test_df = df.iloc[split_index:]
+
 # Forecast
 forecast = run_forecast(df)
 
