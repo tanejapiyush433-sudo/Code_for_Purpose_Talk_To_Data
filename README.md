@@ -111,3 +111,39 @@ The baseline model performs competitively due to the high noise in EEG signals. 
 
 This system provides a lightweight and interpretable approach to forecasting EEG signals and detecting anomalies, enabling early detection of unusual brain activity patterns.
 
+## 📊 Model Comparison
+
+### 🔹 Prophet vs Baseline
+
+![Prophet vs Baseline](assets/output_comparison.png)
+
+This graph compares the forecasting performance of the Prophet model with a simple moving average baseline.
+
+* Prophet captures overall trends and patterns in EEG signals
+* Baseline provides a simple smoothing reference
+* Results show that while Prophet models trends, baseline performs competitively due to high noise in EEG data
+
+---
+
+### 🔹 LSTM Model Comparison
+
+![LSTM Comparison](assets/output_lstm.png)
+
+This graph shows predictions from the LSTM deep learning model compared to actual EEG signals.
+
+* LSTM captures temporal dependencies using sequence learning
+* However, performance is sensitive to noise and requires more training data
+* Compared to Prophet, LSTM is less stable for this dataset
+
+---
+
+## 🧠 Key Insight
+
+Although advanced models like LSTM were explored, Prophet was chosen as the primary model due to:
+
+* Better interpretability
+* Faster training
+* Robust performance on noisy EEG data
+
+This demonstrates the importance of selecting models based on data characteristics rather than complexity.
+
