@@ -115,7 +115,9 @@ This system provides a lightweight and interpretable approach to forecasting EEG
 
 ### 🔹 Prophet vs Baseline
 
-![Prophet vs Baseline](assets/output_comparison.png)
+<img width="1129" height="568" alt="Screenshot 2026-04-11 002816" src="https://github.com/user-attachments/assets/3786dfd8-52c2-404d-b7fe-daf518e92815" />
+
+
 
 This graph compares the forecasting performance of the Prophet model with a simple moving average baseline.
 
@@ -127,7 +129,8 @@ This graph compares the forecasting performance of the Prophet model with a simp
 
 ### 🔹 LSTM Model Comparison
 
-![LSTM Comparison](assets/output_lstm.png)
+<img width="1102" height="588" alt="Screenshot 2026-04-11 002833" src="https://github.com/user-attachments/assets/3b1888b1-3811-4b75-897e-4f3dc383a69d" />
+
 
 This graph shows predictions from the LSTM deep learning model compared to actual EEG signals.
 
