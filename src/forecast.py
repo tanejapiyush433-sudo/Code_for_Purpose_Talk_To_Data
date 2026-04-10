@@ -9,7 +9,7 @@ def run_forecast(df):
     )
     model.fit(train_df)
 
-    future = model.make_future_dataframe(periods=50, freq='s')
+    future = model.make_future_dataframe(periods=len(test_df), freq='s')
     forecast = model.predict(future)
 
     return forecast
