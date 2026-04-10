@@ -11,5 +11,13 @@ def run_forecast(df):
 
     future = model.make_future_dataframe(periods=len(test_df), freq='s')
     forecast = model.predict(future)
+    # ==============================
+    # TEST PREDICTIONS
+    # ==============================
+    forecast_test = forecast.iloc[-len(test_df):]
+
+    y_true = test_df['y'].reset_index(drop=True)
+    y_pred_model = forecast_test['yhat'].reset_index(drop=True)
+    y_pred_baseline = test_df['baseline'].reset_index(drop=True)
 
     return forecast
