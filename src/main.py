@@ -1,5 +1,5 @@
 # src/main.py
-
+from lstm_model import run_lstm
 import pandas as pd
 import glob
 import numpy as np
@@ -87,7 +87,21 @@ print(f"RMSE: {rmse_model:.2f}")
 print("\n--- Baseline ---")
 print(f"MAE: {mae_baseline:.2f}")
 print(f"RMSE: {rmse_baseline:.2f}")
+# ==============================
+# LSTM COMPARISON (OPTIONAL)
+# ==============================
+y_test_lstm, y_pred_lstm = run_lstm(df['y'])
 
+plt.figure(figsize=(10,5))
+
+plt.plot(y_test_lstm, label='Actual')
+plt.plot(y_pred_lstm, label='LSTM Prediction')
+
+plt.legend()
+plt.title("LSTM Model Comparison")
+plt.xlabel("Time")
+plt.ylabel("Signal")
+plt.show()
 # ==============================
 # TEST VISUALIZATION
 # ==============================
