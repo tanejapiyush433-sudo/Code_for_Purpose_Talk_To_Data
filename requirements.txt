@@ -1,2 +1,7 @@
+pandas
+numpy
+matplotlib
+scikit-learn
+prophet
 tensorflow
 keras
