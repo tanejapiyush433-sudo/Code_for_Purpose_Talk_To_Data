@@ -110,3 +110,4 @@ The baseline model performs competitively due to the high noise in EEG signals. 
 ## Conclusion
 
 This system provides a lightweight and interpretable approach to forecasting EEG signals and detecting anomalies, enabling early detection of unusual brain activity patterns.
+
