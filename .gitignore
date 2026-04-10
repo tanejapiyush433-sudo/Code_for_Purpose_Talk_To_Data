@@ -1,1 +1,26 @@
+# Python cache
+__pycache__/
+*.pyc
 
+# Virtual environment
+venv/
+env/
+
+# Environment variables
+.env
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Logs
+*.log
+
+# System files
+.DS_Store
+
+# Data files (optional - keep repo light)
+data/*.csv
+
+# Output files
+*.png
+*.jpg
