@@ -1,5 +1,5 @@
 # src/main.py
-from lstm_model import run_lstm
+from lstm import run_lstm
 import pandas as pd
 import glob
 import numpy as np
