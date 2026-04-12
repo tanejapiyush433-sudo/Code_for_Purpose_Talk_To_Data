@@ -1,0 +1,8 @@
+pandas==2.2.2
+numpy==1.26.4
+matplotlib==3.8.4
+scikit-learn==1.4.2
+prophet==1.1.5
+tensorflow==2.16.1
+keras==3.3.3
+scipy==1.13.0
